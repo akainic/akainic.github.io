@@ -1,0 +1,21 @@
+#landing,
+#about,
+#work,
+#contact {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.current {
+  top: 0;
+  left: 0;
+}
+
+.on-left {
+  left: -100%;
+}
+
+.on-right {
+  left: 200%;
+}
