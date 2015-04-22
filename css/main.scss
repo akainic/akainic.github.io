@@ -6,14 +6,15 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Open Sans", Helvetica, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$primary-color:    #020314;
+$secondary-color:  #F9F9F9;
 $background-color: #fdfdfd;
 $hover-color:      #4085E0;
 
@@ -22,7 +23,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1200px;
+$content-width:    800px;
 
 $screen: 'only screen';
 

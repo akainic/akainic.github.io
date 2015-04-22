@@ -7,19 +7,6 @@
   width: 100%;
 }
 
-// .site-title {
-//   font-size: 26px;
-//   line-height: 56px;
-//   letter-spacing: -1px;
-//   margin-bottom: 0;
-//   float: left;
-
-//   &,
-//   &:visited {
-//     color: $grey-color-dark;
-//   }
-// }
-
 .site-nav {
   text-align: center;
 
@@ -73,14 +60,26 @@
 
   .page-link {
     padding: 7px 12px;
-    color: #000;
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 1em;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
 
-    &:hover {
-      background-color: gray;
+    &.light {
+      color: $secondary-color;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    &.dark {
+      color: $primary-color;
+
+      &:hover {
+        background-color: darken($secondary-color, 15%);
+      }
     }
   }
 }

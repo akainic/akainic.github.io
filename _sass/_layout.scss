@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 #landing,
 #about,
 #work,
@@ -5,17 +9,86 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  padding-top: 3em;
+}
+
+#about {
+  ul {
+    li {
+      list-style: none;
+      margin: 0 0 0.5em 2em;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+          color: lighten($primary-color, 30%);
+        }
+      }
+    }
+  }
+}
+
+#work, #contact {
+  background-color: #323341;
+  color: $secondary-color;
+}
+
+#contact {
+  background-image: url('/images/maison.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .current {
   top: 0;
   left: 0;
+  // transition: left 1s ease;
 }
 
 .on-left {
   left: -100%;
+  // transition: left 1s ease;
 }
 
 .on-right {
   left: 200%;
+  // transition: left 1s ease;
+}
+
+h1 {
+  font-family: Montserrat;
+}
+
+.hide {
+  display: none;
+}
+
+.no-match {
+  display: none;
+}
+
+form {
+  max-width: 400px;
+  margin: 3em auto 0;
+
+  label {
+    display: inline-block;
+    width: 7.5em;
+    vertical-align: top;
+  }
+
+  input, textarea {
+    width: 16.5em;
+    font-size: 1em;
+    padding: 0.25em;
+    margin-bottom: 1em;
+    border-radius: 0.25em;
+  }
+
+  input[type="submit"] {
+    width: 11em;
+    margin-left: 7.8em;
+  }
 }

@@ -2,34 +2,102 @@
 layout: default
 ---
 
-<section id="landing" class="current" data-order="1">
+<section id="landing" class="current">
 
-  <h1 class="landing-title">Anne Kainic</h1>
-  <h2>Web Developer, World Traveler, Vegan Foodie, and Nostalgic</h2>
-
-</section>
-
-<section id="about" class="on-right" data-order="2">
-
-  <h1>About</h1>
-  <div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in massa nec mi eleifend viverra eu eu quam. Mauris eu blandit urna. Suspendisse feugiat rutrum nisi ultrices accumsan. Aliquam ultrices blandit massa, ut suscipit urna sollicitudin ac. Nulla quis fermentum sapien, et semper odio. Suspendisse diam quam, mattis nec dui nec, posuere pharetra lectus. Maecenas risus mauris, consectetur quis gravida non, blandit eget magna. Sed eget consequat nulla, in pulvinar dolor. Aliquam eu nulla accumsan, aliquet libero quis, mattis elit. Quisque pulvinar pellentesque tempus. Maecenas congue neque ut ante finibus, in venenatis tellus rhoncus. Nunc ultricies quam nibh, et elementum lorem mollis quis. Mauris euismod, quam vel ultrices faucibus, urna mi aliquam nunc, in tristique augue enim ac tortor. Mauris ac justo eget velit placerat malesuada. Aliquam molestie sapien nec lorem dignissim molestie. Aliquam nec ipsum eu massa mattis auctor.
+  <div class="headlines">
+    <h1 class="landing-title">Anne is a</h1>
+    <h2>
+      Web Developer,
+      <br>
+      World Traveler,
+      <br>
+      Vegan Foodie,
+      <br>
+      & Nostalgic
+    </h2>
   </div>
 
 </section>
 
-<section id="work" class="on-right" data-order="3">
+<section id="about" class="on-right">
 
-  <h1>Work</h1>
-
-  <div>
-    Sed in lorem elementum, fermentum sem nec, dapibus turpis. Aliquam sed magna eu urna hendrerit ullamcorper. Fusce et venenatis lectus. Sed viverra ac odio id luctus. Suspendisse egestas odio quis nibh rutrum, sed suscipit erat interdum. Morbi faucibus lectus erat, non vulputate est porta vel. Maecenas eu ante ac enim rutrum iaculis id eget enim.
+  <div class="wrapper">
+    <h1>About</h1>
+    <p>
+      Hi, my name is Anne, and I am a front-end web developer. My background is non-linear: in college I studied English literature and economics, and then I worked as an associate in a consulting group. After 2 years, I made the leap to writing code. Learning how to program was one of the most liberating professional and personal moves I've made. I love what I do!
+    </p>
+    <p>
+      You can also find me on:
+      <ul>
+        <li><a href="">
+          <span class="right"><i class="fa fa-linkedin-square" target="_blank"></i></span>
+          LinkedIn
+        </a></li>
+        <li><a href="">
+          <span class="right"><i class="fa fa-github"></i></span>
+          Github
+        </a></li>
+        <li><a href="">
+          <span class="right"><i class="fa fa-instagram"></i></span>
+          Instagram
+        </a></li>
+      </ul>
+    </p>
+    <p>
+      Outside of programming, my interests are varied. Here's a graph that illustrates what I'm interested in:
+    </p>
   </div>
 
 </section>
 
-<section id="contact" class="on-right" data-order="4">
+<section id="work" class="on-right">
 
-  <h1>Contact</h1>
+  <div class="wrapper">
+    <h1>Work</h1>
+    <p>
+      As a front-end web developer, my primary technical interests are HTML, SASS, JavaScript, and jQuery. I also really enjoying data analysis, and I am learning tools to help me visualize the data I've analyzed.
+    </p>
+    <p>
+      Here are some samples of my work:
+    </p>
+  </div>
+
+</section>
+
+<section id="contact" class="on-right">
+
+  <div class="wrapper">
+    <h1>Contact</h1>
+    <p>
+      If you'd like to get in touch with me, please complete the form below.
+    </p>
+    <div class="contact-message">
+      <p class="email-received hide">Thank you for your email!</p>
+    </div>
+
+    <form action="https://getsimpleform.com/messages?form_api_token=9af369dafb6224e579b30e7872d99402" method="post">
+
+      <input type='hidden' name='redirect_to' value='http://www.annekainic.com/#contact/?confirmation' />
+
+      <!-- all your input fields here.... -->
+      <label for='name'>Name</label>
+      <input type='text' name='name' /><br>
+
+      <label for='email'>Email Address</label>
+      <input type='text' name='email' id='email' /><br>
+
+      <label for='email-confirm'>Confirm Email</label>
+      <input type='text' name='email-confirm' id='email-confirm' />
+
+      <div class="no-match">Your entries do not match. Please make sure your email is entered correctly.</div><br>
+
+      <label for='reason'>Message</label>
+      <textarea type='textarea' name='reason' rows='6'></textarea><br>
+
+      <input type='submit' value='Send me an email!' />
+    </form>
+  </div>
+
+  </div>
 
 </section>
