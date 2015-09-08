@@ -35,6 +35,33 @@ body {
   color: $secondary-color;
 }
 
+#work {
+  .sample {
+    width: 100%;
+    padding: 1em;
+
+    @include media-query($medium-only) {
+      float: left; 
+      width: -webkit-calc((100vw - #{$spacing-unit * 2}) / 2);
+      width: calc((100vw - #{$spacing-unit * 2}) / 2);
+      height: -webkit-calc((100vw - #{$spacing-unit * 2}) / 2);
+      height: calc((100vw - #{$spacing-unit * 2}) / 2);  
+    }
+
+    @include media-query($large-up) {
+      float: left; 
+      width: -webkit-calc((#{$content-width} - #{$spacing-unit * 4}) / 2);
+      width: calc((#{$content-width} - #{$spacing-unit * 4}) / 2);
+      height: -webkit-calc((#{$content-width} - #{$spacing-unit * 4}) / 2);
+      height: calc((#{$content-width} - #{$spacing-unit * 4}) / 2);
+    }
+  }
+
+  .sample-info {
+    padding: 1em;
+  }
+}
+
 #contact {
   background-image: url('/images/maison.jpg');
   background-repeat: no-repeat;
