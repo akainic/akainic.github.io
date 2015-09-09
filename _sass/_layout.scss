@@ -66,6 +66,41 @@ body {
   background-image: url('/images/maison.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  ul {
+    text-align: center;
+    line-height: 70vh;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    width: 4.25em;
+
+    a {
+      color: $secondary-color;
+
+      span {
+        display: none;
+        margin: 0 auto;
+        position: absolute;
+        top: -5px;
+        width: 4.25em;
+      }
+
+      &:hover {
+        color: lighten($grey-color, 40%);
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    i {
+      font-size: 3em;
+    }
+  }
 }
 
 .current {
@@ -94,28 +129,4 @@ h1 {
 
 .no-match {
   display: none;
-}
-
-form {
-  max-width: 400px;
-  margin: 3em auto 0;
-
-  label {
-    display: inline-block;
-    width: 7.5em;
-    vertical-align: top;
-  }
-
-  input, textarea {
-    width: 16.5em;
-    font-size: 1em;
-    padding: 0.25em;
-    margin-bottom: 1em;
-    border-radius: 0.25em;
-  }
-
-  input[type="submit"] {
-    width: 11em;
-    margin-left: 7.8em;
-  }
 }
