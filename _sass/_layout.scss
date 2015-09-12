@@ -83,15 +83,20 @@ h1 {
       height: calc((#{$content-width} - #{$spacing-unit * 4}) / 2.75);
     }
 
+    img {
+      opacity: 0.9;
+      transition: opacity 0.5s;
+    }
+
     .sample-info {
       color: #fff;
-      display: none;
-      font-style: italic;
       font-weight: bold;
       left: 15%;
+      opacity: 0;
       position: absolute;
       text-shadow: 1px 1px $purple-color-dark;
       top: 25%;
+      transition: opacity 0.5s;
       width: 63%;
     }
 
@@ -101,11 +106,13 @@ h1 {
       }
 
       .sample-info {
-        display: block;
+        opacity: 1;
+        transition: opacity 0.5s;
       }
 
       img {
         opacity: 0.4;
+        transition: opacity 0.5s;
       }
     }
   }
