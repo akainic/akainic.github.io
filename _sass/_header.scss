@@ -1,10 +1,7 @@
-/**
- * Site header
- */
 .site-header {
   position: absolute;
-  z-index: 2;
   width: 100%;
+  z-index: 2;
 }
 
 .site-nav {
@@ -13,35 +10,35 @@
   .menu-icon {
     display: none;
     float: right;
-    width: 26px;
     height: 26px;
     line-height: 0;
-    padding-top: 10px;
     margin-bottom: 6px;
+    padding-top: 10px;
     text-align: center;
+    width: 26px;
   }
 
   .menu-icon-div {
-    width: 26px;
+    background-color: $grey-color-dark;
+    border-radius: 2px;    
     height: 4px;
     position: absolute;
     top: 16px;
-    background-color: $grey-color-dark;
-    border-radius: 2px;
+    width: 26px;
 
     &:before {
-      content: '';
       @extend .menu-icon-div;
-      top: -10px;
+      content: '';
       left: 0;
+      top: -10px;
       transition: top 0.5s ease;
     }
 
     &:after {
-      content: '';
       @extend .menu-icon-div;
-      top: 10px;
+      content: '';
       left: 0;
+      top: 10px;
       transition: top 0.5s ease;
     }
 
@@ -58,13 +55,13 @@
     list-style: none;
   }
 
-  .page-link {
-    padding: 7px 12px;
+  .page-link { 
     font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
     line-height: 1em;
+    padding: 7px 12px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
 
     &.light {
       color: $secondary-color;
