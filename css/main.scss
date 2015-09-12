@@ -3,20 +3,20 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "Open Sans", Helvetica, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     15px;
 
 $primary-color:    #020314;
 $secondary-color:  #F9F9F9;
-$background-color: #fdfdfd;
+$background-color: #f8f8fa;
 $hover-color:      #4085E0;
+
+$purple-color-dark:#323341;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -29,8 +29,8 @@ $screen: 'only screen';
 
 $small-only: '#{$screen} and (max-width: 600px)';
 $medium-up: '#{$screen} and (min-width: 601px)';
-$medium-only: '#{$screen} and (min-width: 601px) and (max-width: 1000px)';
-$large-up: '#{$screen} and (min-width: 1001px)';
+$medium-only: '#{$screen} and (min-width: 601px) and (max-width: 800px)';
+$large-up: '#{$screen} and (min-width: 801px)';
 
 
 // Using media queries with like this:

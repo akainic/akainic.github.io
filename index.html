@@ -13,7 +13,7 @@ layout: default
       <br>
       Vegan Foodie,
       <br>
-      & Nostalgic
+      &amp; Nostalgic
     </h2>
   </div>
 
@@ -22,30 +22,7 @@ layout: default
 <section id="about" class="on-right">
 
   <div class="wrapper">
-    <h1>About</h1>
-    <p>
-      Hi, my name is Anne, and I am a front-end web developer. My background is non-linear: in college I studied English literature and economics, and then I worked as an associate in a consulting group. After 2 years, I made the leap to writing code. Learning how to program was one of the most liberating professional and personal moves I've made. I love what I do!
-    </p>
-    <p>
-      You can also find me on:
-      <ul>
-        <li><a href="">
-          <span class="right"><i class="fa fa-linkedin-square" target="_blank"></i></span>
-          LinkedIn
-        </a></li>
-        <li><a href="">
-          <span class="right"><i class="fa fa-github"></i></span>
-          Github
-        </a></li>
-        <li><a href="">
-          <span class="right"><i class="fa fa-instagram"></i></span>
-          Instagram
-        </a></li>
-      </ul>
-    </p>
-    <p>
-      Outside of programming, my interests are varied. Here's a graph that illustrates what I'm interested in:
-    </p>
+    <img src="/images/interest_graph.png" alt="A Graph of Anne's Interests">
   </div>
 
 </section>
@@ -53,13 +30,24 @@ layout: default
 <section id="work" class="on-right">
 
   <div class="wrapper">
-    <h1>Work</h1>
-    <p>
-      As a front-end web developer, my primary technical interests are HTML, SASS, JavaScript, and jQuery. I also really enjoying data analysis, and I am learning tools to help me visualize the data I've analyzed.
-    </p>
-    <p>
-      Here are some samples of my work:
-    </p>
+    <div class="sample">
+      <div class="sample-container">
+        <a href="//www.adampalay.com/" target="_blank">
+          <img src="/images/screenshot_adam_palay.jpg" alt="Screenshot of Adam Palay's Website">
+          <div class="sample-info">
+            This is the personal website of a software engineer. It was built using Jekyll.
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="sample">
+      <a href="//www.kainiccollegeconsulting.com/" target="_blank">
+        <img src="/images/screenshot_kainic_college_consulting.jpg" alt="Screenshot of Kainic College Consulting">
+        <div class="sample-info">
+          This is the professional website for an independent college and career counselor. It was built using Jekyll. 
+        </div>
+      </a>
+    </div>
   </div>
 
 </section>
@@ -67,35 +55,30 @@ layout: default
 <section id="contact" class="on-right">
 
   <div class="wrapper">
-    <h1>Contact</h1>
-    <p>
-      If you'd like to get in touch with me, please complete the form below.
-    </p>
-    <div class="contact-message">
-      <p class="email-received hide">Thank you for your email!</p>
-    </div>
-
-    <form action="https://getsimpleform.com/messages?form_api_token=9af369dafb6224e579b30e7872d99402" method="post">
-
-      <input type='hidden' name='redirect_to' value='http://www.annekainic.com/#contact/?confirmation' />
-
-      <!-- all your input fields here.... -->
-      <label for='name'>Name</label>
-      <input type='text' name='name' /><br>
-
-      <label for='email'>Email Address</label>
-      <input type='text' name='email' id='email' /><br>
-
-      <label for='email-confirm'>Confirm Email</label>
-      <input type='text' name='email-confirm' id='email-confirm' />
-
-      <div class="no-match">Your entries do not match. Please make sure your email is entered correctly.</div><br>
-
-      <label for='reason'>Message</label>
-      <textarea type='textarea' name='reason' rows='6'></textarea><br>
-
-      <input type='submit' value='Send me an email!' />
-    </form>
+    <ul>
+      <li>
+        <a href="//www.linkedin.com/in/annekainic" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="//github.com/akainic" target="_blank">
+          <i class="fa fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a href="//akainic.github.io/resume/" target="_blank">
+          <i class="fa fa-file-text-o"></i>
+          <span>Resume</span>
+        </a>
+      </li>
+<!--         <li><a href="">
+        <span class="right"><i class="fa fa-instagram"></i></span>
+        Instagram
+      </a></li> -->
+    </ul>
   </div>
 
   </div>
