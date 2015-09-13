@@ -75,7 +75,8 @@ h1 {
     overflow: hidden;
     margin: 1em;
     position: relative;
-    width: 100%;
+    width: -webkit-calc((100vw - #{$spacing-unit * 2}) - 2em);
+    width: calc((100vw - #{$spacing-unit * 2}) - 2em);
     box-shadow: 0 0 0.5em 0.25em $purple-color-dark;
 
     @include media-query($medium-only) {
