@@ -9,7 +9,7 @@ p, ul {
 }
 
 body {
-  background-color: $background-color;
+  background-color: $purple-color-dark;
   color: $primary-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -54,11 +54,11 @@ li {
  * Links
  */
 a {
-  color: darken($hover-color, 15%);
+  color: $purple-color-medium;
   text-decoration: none;
 
   &:visited {
-    color: $hover-color;
+    color: darken($purple-color-medium, 15%);
   }
 
   &:hover {
