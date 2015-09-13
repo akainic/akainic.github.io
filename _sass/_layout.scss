@@ -42,6 +42,10 @@ h1 {
 
 #about {
   background-color: #f8f8fa;
+  background-image: url('/images/paris_skyline.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%; 
 
   ul {
     li {
