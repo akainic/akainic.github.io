@@ -14,26 +14,22 @@ h1 {
   padding-top: 4em;
   position: absolute;
   top: 0;
-  transition: left 1s, right 1s;
   width: 100%;
 }
 
 .current {
   left: 0;
   z-index: 2;
-  // transition: left 1s, right 1s;
 }
 
 .on-left {
   left: -100vw;
   z-index: 1;
-  // transition: left 1s, right 1s;
 }
 
 .on-right {
   right: -100vw;
   z-index: 1;
-  // transition: left 1s, right 1s;
 }
 
 .hide {
@@ -46,6 +42,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 75%; 
+
+  @include media-query($medium-up) {
+    padding-top: 2em;
+  }
 
   ul {
     li {
