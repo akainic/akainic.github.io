@@ -75,7 +75,7 @@
       color: $primary-color;
 
       &:hover {
-        background-color: darken($secondary-color, 15%);
+        background-color: $purple-color-medium;
       }
     }
   }

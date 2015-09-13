@@ -11,7 +11,7 @@ h1 {
 #work,
 #contact {
   height: 100%;
-  padding-top: 5em;
+  padding-top: 4em;
   position: absolute;
   top: 0;
   transition: left 1s, right 1s;
@@ -45,7 +45,7 @@ h1 {
   background-image: url('/images/paris_skyline.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 100%; 
+  background-position: 0% 75%; 
 
   ul {
     li {
