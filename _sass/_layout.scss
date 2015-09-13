@@ -42,7 +42,7 @@ h1 {
 
 #about {
   background-color: #f8f8fa;
-  
+
   ul {
     li {
       list-style: none;
@@ -66,25 +66,30 @@ h1 {
 }
 
 #work {
+  background-image: url('/images/maison.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .sample { 
     height: 65vw;
     overflow: hidden;
-    padding: 1em;
+    margin: 1em;
     position: relative;
     width: 100%;
+    box-shadow: 0 0 0.5em 0.25em $purple-color-dark;
 
     @include media-query($medium-only) {
       float: left; 
-      width: -webkit-calc((100vw - #{$spacing-unit * 2}) / 2);
-      width: calc((100vw - #{$spacing-unit * 2}) / 2);
+      width: -webkit-calc(((100vw - #{$spacing-unit * 2}) / 2) - 2em);
+      width: calc(((100vw - #{$spacing-unit * 2}) / 2) - 2em);
       height: -webkit-calc((100vw - #{$spacing-unit * 2}) / 2.75);
       height: calc((100vw - #{$spacing-unit * 2}) / 2.75);  
     }
 
     @include media-query($large-up) {
       float: left; 
-      width: -webkit-calc((#{$content-width} - #{$spacing-unit * 4}) / 2);
-      width: calc((#{$content-width} - #{$spacing-unit * 4}) / 2);
+      width: -webkit-calc(((#{$content-width} - #{$spacing-unit * 4}) / 2) - 2em);
+      width: calc(((#{$content-width} - #{$spacing-unit * 4}) / 2) - 2em);
       height: -webkit-calc((#{$content-width} - #{$spacing-unit * 4}) / 2.75);
       height: calc((#{$content-width} - #{$spacing-unit * 4}) / 2.75);
     }
@@ -131,9 +136,10 @@ h1 {
 }
 
 #contact {
-  background-image: url('/images/maison.jpg');
+  background-image: url('/images/pantheon_front.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 40%;
 
   ul {
     line-height: 70vh;
