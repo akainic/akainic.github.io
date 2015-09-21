@@ -16,7 +16,6 @@ $(function() {
     } else {
       $('.page-link').addClass('light');
     }
-
   }
 
   if (window.location.hash != "") {
