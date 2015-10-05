@@ -1,13 +1,12 @@
 $(function() {
-  function changePage(page) {
-    $('body').find('section')
-             .removeClass('current on-right on-left');
-    $(page).prevAll('section')
-                  .addClass('on-left');
-    $(page).nextAll('section')
-                  .addClass('on-right');
-    $(page).addClass('current');
-  }
+  $('#fullpage').fullpage({
+    anchors: ['landing', 'about', 'work', 'contact'],
+    menu: '#menu'
+  });
+
+  // function setCurrentPage(page) {
+  //   $(page).addClass('active');
+  // }
 
   function setHeaderLinkColor(page) {
     $('.page-link').removeClass('dark light');
@@ -19,12 +18,12 @@ $(function() {
   }
 
   if (window.location.hash != "") {
-    changePage(window.location.hash);
+    // setCurrentPage(window.location.hash);
     setHeaderLinkColor(window.location.hash);
   }
 
   $('.page-link').on('click', function() {
-    changePage('#' + $(this).data('destination'));
+    // setCurrentPage('#' + $(this).data('destination'));
     setHeaderLinkColor('#' + $(this).data('destination'));
   });
 });

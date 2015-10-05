@@ -4,14 +4,15 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    {{ content }}
-
+  	{% include header.html %}
+  	<div id="fullpage">
+    	{{ content }}
+  	</div>
   </body>
+
   <footer>
     <script src="/javascripts/main.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.fullPage.js"></script>
   </footer>
 
 </html>
