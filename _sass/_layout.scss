@@ -6,37 +6,15 @@ h1 {
   font-family: Montserrat;
 }
 
-#landing,
-#about,
-#work,
-#contact {
-  height: 100%;
-  padding-top: 4em;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.current {
-  left: 0;
-  z-index: 2;
-}
-
-.on-left {
-  left: -100vw;
-  z-index: 1;
-}
-
-.on-right {
-  right: -100vw;
-  z-index: 1;
-}
-
 .hide {
   display: none;
 }
 
-#about {
+.section {
+  padding-top: 4em;
+}
+
+.section-about {
   background-color: #f8f8fa;
   background-image: url('/images/paris_skyline.jpg');
   background-repeat: no-repeat;
@@ -64,18 +42,18 @@ h1 {
   }
 }
 
-#work, #contact {
+.section-work, .section-contact {
   background-color: $purple-color-dark;
   color: $secondary-color;
 }
 
-#work {
+.section-work {
   background-image: url('/images/maison.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
   .sample { 
-    height: 65vw;
+    height: 50vw;
     overflow: hidden;
     margin: 1em;
     position: relative;
@@ -84,6 +62,7 @@ h1 {
     box-shadow: 0 3px 10px 0 #1a1a1d;
 
     @include media-query($medium-only) {
+      height: 65vw;
       float: left; 
       width: -webkit-calc(((100vw - #{$spacing-unit * 2}) / 2) - 2em);
       width: calc(((100vw - #{$spacing-unit * 2}) / 2) - 2em);
@@ -92,6 +71,7 @@ h1 {
     }
 
     @include media-query($large-up) {
+      height: 65vw;
       float: left; 
       width: -webkit-calc(((#{$content-width} - #{$spacing-unit * 4}) / 2) - 2em);
       width: calc(((#{$content-width} - #{$spacing-unit * 4}) / 2) - 2em);
@@ -140,15 +120,15 @@ h1 {
   }
 }
 
-#contact {
+.section-contact {
   background-image: url('/images/pantheon_front.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 40%;
 
   ul {
-    line-height: 70vh;
     text-align: center;
+    margin-top: 30%;
   }
 
   li {
@@ -186,8 +166,6 @@ h1 {
           transition: transform 0.5s;
         }
       }
-    }
-
-    
+    } 
   }
 }
