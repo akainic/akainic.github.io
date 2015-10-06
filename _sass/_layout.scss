@@ -14,7 +14,7 @@ h1 {
   padding-top: 4em;
 }
 
-#section-about {
+.section-about {
   background-color: #f8f8fa;
   background-image: url('/images/paris_skyline.jpg');
   background-repeat: no-repeat;
@@ -42,12 +42,12 @@ h1 {
   }
 }
 
-#section-work, #section-contact {
+.section-work, .section-contact {
   background-color: $purple-color-dark;
   color: $secondary-color;
 }
 
-#section-work {
+.section-work {
   background-image: url('/images/maison.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,7 +120,7 @@ h1 {
   }
 }
 
-#section-contact {
+.section-contact {
   background-image: url('/images/pantheon_front.jpg');
   background-repeat: no-repeat;
   background-size: cover;
