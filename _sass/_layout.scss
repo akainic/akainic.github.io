@@ -24,22 +24,6 @@ h1 {
   @include media-query($medium-up) {
     padding-top: 2em;
   }
-
-  ul {
-    li {
-      list-style: none;
-      margin: 0 0 0.5em 2em;
-
-      a {
-        color: $primary-color;
-        text-decoration: none;
-
-        &:hover {
-          color: lighten($primary-color, 30%);
-        }
-      }
-    }
-  }
 }
 
 .section-work, .section-contact {
