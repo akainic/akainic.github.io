@@ -33,20 +33,11 @@ $medium-only: '#{$screen} and (min-width: 601px) and (max-width: 800px)';
 $large-up: '#{$screen} and (min-width: 801px)';
 
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
   @media #{$device} {
     @content;
   }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

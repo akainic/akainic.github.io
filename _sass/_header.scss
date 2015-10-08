@@ -11,62 +11,22 @@
 .site-nav {
   text-align: center;
 
-  .menu-icon {
-    display: none;
-    float: right;
-    height: 26px;
-    line-height: 0;
-    margin-bottom: 6px;
-    padding-top: 10px;
-    text-align: center;
-    width: 26px;
-  }
-
-  .menu-icon-div {
-    background-color: $grey-color-dark;
-    border-radius: 2px;    
-    height: 4px;
-    position: absolute;
-    top: 16px;
-    width: 26px;
-
-    &:before {
-      @extend .menu-icon-div;
-      content: '';
-      left: 0;
-      top: -10px;
-      transition: top 0.5s ease;
-    }
-
-    &:after {
-      @extend .menu-icon-div;
-      content: '';
-      left: 0;
-      top: 10px;
-      transition: top 0.5s ease;
-    }
-
-    &.transition {
-      &:before,
-      &:after {
-        top: 0;
-      }
-    }
-  }
-
   li {
     display: inline-block;
     list-style: none;
   }
 
   .page-link { 
+    color: $secondary-color;
     font-size: 0.9em;
     font-family: "Montserrat", sans-serif;
+    font-weight: bold;
     line-height: 1em;
     padding: 7px 8px;
     text-decoration: none;
     text-transform: uppercase;
-    color: $secondary-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     &:hover {
       background-color: $primary-color;
