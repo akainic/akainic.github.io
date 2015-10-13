@@ -118,6 +118,7 @@ h1 {
   li {
     display: inline-block;
     list-style: none;
+    position: relative;
     width: 4.25em;
 
     a {
@@ -129,7 +130,7 @@ h1 {
         font-weight: bold;
         margin: 0 auto;
         position: absolute;
-        top: -10px;
+        top: -2.75em;
         width: 4.25em;
       }
 
