@@ -1,6 +1,6 @@
 $(function() {
   $('#fullpage').fullpage({
-    anchors: ['landing', 'about', 'contact'],
+    anchors: ['landing', 'contact'],
     menu: '#menu'
   });
 });
